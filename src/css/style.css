@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F8F7F3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Bai Jamjuree', serif;
+    background-color: #00ffff;
+}
+
+p {
+    font-family: 'SF Mono', serif;
+    align-content: center;
+}
