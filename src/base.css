@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'sfmono';
+    src: url('../assets/font/SFMonoHeavy.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'bai jamjuree';
+    src: url('../assets/font/BaiJamjuree-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-display: swap;
+}
