@@ -1,23 +1,9 @@
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #F8F7F3;
-}
+/* Main entrance for HTML that imports all CSS files */
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
+@import url('font.css');
+@import url('first.css');
 
-h1 {
-    font-family: 'Bai Jamjuree', serif;
-    background-color: #00ffff;
-}
-
-p {
-    font-family: 'SF Mono', serif;
-    align-content: center;
+/* Global CSS variables*/
+:root {
+    --base-font-family: 'Bai Jamjuree';
 }

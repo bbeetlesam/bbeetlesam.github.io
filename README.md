@@ -10,7 +10,7 @@ You can find this website's repository in [here](https://github.com/bbeetlesam/b
 Currently, this website only uses pure HTML, CSS, and JavaScript, so you can't expect too much from the page,
 but I'll consider learning some CSS framework like Tailwind/Bootstrap in the future.
 
-Currently too, I'm a toddler to this web-dev stuffs, so **advices** would be very much appreciated!
+Currently, too, I'm a toddler to this web-dev stuffs, so **advices** would be very much appreciated!
 
 [logo]: https://raw.githubusercontent.com/bbeetlesam/bbeetlesam.github.io/dev/assets/my-notion-face-transparent1.png?raw=true
 
