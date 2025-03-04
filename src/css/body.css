@@ -1,0 +1,34 @@
+/* Body styling */
+
+/* Enable smooth scroll when ported to an element */
+html {
+    scroll-behavior: smooth;
+}
+
+#home { background-color: lightblue; }
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    background-color: #F8F7F3;
+}
+
+header {
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+}
+
+main {
+    background-color: green;
+}
+
+footer {
+    background-color: indianred;
+}

@@ -1,0 +1,11 @@
+/* Main entrance for HTML that imports all CSS files */
+
+@import url('font.css');
+@import url('body.css');
+@import url('some.css');
+@import url('header.css');
+
+/* Global CSS variables*/
+:root {
+    --base-font-family: 'Times New Roman';
+}

@@ -1,9 +1,0 @@
-/* Main entrance for HTML that imports all CSS files */
-
-@import url('font.css');
-@import url('first.css');
-
-/* Global CSS variables*/
-:root {
-    --base-font-family: 'Bai Jamjuree';
-}
