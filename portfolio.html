@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="bbeetlesam">
+        <meta name="description" content="bbeetlesam's portfolio">
+        <title>My Portfolio</title>
+
+        <link rel="icon" type="image/svg+xml" href="assets/img/icon.png">
+        <link rel="stylesheet" href="src/css/font.css">
+
+        <style>
+            :root {
+                --header-color: black;
+                --p-color: black;
+                --h2-color: white;
+                --bg-color: #777777;
+            }
+
+            * {
+                font-family: 'SFMono', monospace;
+            }
+
+            body {
+                background-color: var(--bg-color);
+                transition: background-color 0.4s;
+            }
+
+            .header-wrapper {
+                display: flex;
+                justify-content: center;
+            }
+
+            #header {
+                display: inline-block;
+                color: var(--header-color);
+                text-align: center;
+                padding: 10px;
+                transition: color 0.4s;
+            }
+
+            h2 {
+                color: var(--h2-color);
+                font-variant-caps: small-caps;
+            }
+
+            p {
+                color: var(--p-color);
+                width: 50%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="header-wrapper">
+            <h1 id="header">My Portfolio</h1>
+        </div>
+
+        <h2>What is a portfolio?</h2>
+
+        <p>IDK, why do it's important? Like, it's just a paper, ain't it?</p>
+        <p> Whoa, I didn't say above word. I must be high when I wrote it.<br>Anyway, portfolio is so important,
+            especially when you're applying for a job, so the recruiter could 'know' you just by looking at your portfolio.
+            Also, it can change his impression to you, so create an interesting-as-possible portfolio.
+        </p>
+
+        <h2>What does it contain?</h2>
+
+        <p> Fuck it, I have no idea. They said you must include your skills, experiences, this and that,
+            but really, I don't know about fucking anything.
+        </p>
+
+        <h2>How to make it?</h2>
+
+        <p> You ask me how to make one of it, while I just told you that I don't know anything about it? Shit man.
+            You must be crazy asking someone that's also crazy.
+        </p>
+        <p> Wait, did it means that we're both are crazy? So we're friends now? Fucking hell, that is awesome, man!
+            At least I'll have someone in case I die in my 30's.
+        </p>
+
+        <h2>You're speaking nonsense.</h2>
+
+        <p> Fuck you. Did you think I'm here just to give you useful information just to make more competitor to me,
+            so my chance for getting a job now become less from time to time?<br>
+            Ah, how hard to live in these days.<br>
+            I sometimes wish I'd never been born at all
+        </p>
+
+        <p>I guess, I won't get a girlfriend before I finish this fucking project.</p>
+
+        <h1 style="text-align:center; font-variant-caps: small-caps">The End.</h1>
+
+        <script>
+            document.getElementById('header').addEventListener('mouseover', function() {
+                document.body.style.backgroundColor = 'black';
+                document.querySelectorAll('p').forEach(p => p.style.color = 'white');
+                document.querySelectorAll('h1').forEach(h1 => h1.style.color = 'white');
+                document.querySelectorAll('h2').forEach(h2 => h2.style.color = 'darkturquoise');
+            })
+
+            document.getElementById('header').addEventListener('mouseout', function() {
+                document.body.style.backgroundColor = 'var(--bg-color)';
+                document.querySelectorAll('p').forEach(p => p.style.color = 'var(--p-color)');
+                document.querySelectorAll('h1').forEach(h1 => h1.style.color = 'var(--header-color)');
+                document.querySelectorAll('h2').forEach(h2 => h2.style.color = 'white');
+            });
+        </script>
+    </body>
+</html>

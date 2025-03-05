@@ -4,6 +4,7 @@
 @import url('body.css');
 @import url('some.css');
 @import url('header.css');
+@import url('sections.css');
 
 /* Global CSS variables*/
 :root {
