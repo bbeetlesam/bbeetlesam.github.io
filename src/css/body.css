@@ -5,14 +5,21 @@ html {
     scroll-behavior: smooth;
 }
 
-#home { background-color: lightblue; }
+#hero { background-color: lightblue; }
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 10fr auto auto;
     grid-template-columns: 1fr;
     min-height: 100vh;
     background-color: #F8F7F3;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    scroll-margin-top: 60px; /* For scroll pos offset (navbar height) */
 }
 
 header {
@@ -20,7 +27,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 0px;
+    padding: 0 0 0 00px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     background-color: #000000;
 }
