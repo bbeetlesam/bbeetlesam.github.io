@@ -1,0 +1,33 @@
+/* Header div (navbar) styling */
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+header li a {
+    display: block;
+    text-align: center;
+    padding: 4px 10px;
+}
+
+header li a:hover {
+    background-color: white;
+    color: black;
+}
+
+header nav {
+    top: 0;
+    width: 100%;
+}
+
+header nav a {
+    font-family: 'SFMono', serif;
+    font-weight: lighter;
+    text-decoration: none;
+    color: white;
+}

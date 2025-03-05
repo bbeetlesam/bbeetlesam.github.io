@@ -1,0 +1,10 @@
+/* Main div sections */
+
+#hero {
+    height: calc(100vh - 60px - 20px);
+    background-color: lightblue;
+}
+
+#about {
+
+}
