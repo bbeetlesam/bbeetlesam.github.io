@@ -18,13 +18,41 @@ Currently, too, I'm a toddler to this web-dev stuffs, so **advices** would be ve
 
 Currently, there is no worth-to-look contents/feature in this website. But, I'll add more features as soon as I can!
 
-| Contents  | Description                     |
-|-----------|---------------------------------|
-| About     | Know more about who am I.       |
-| Portfolio | Self-explanatory. My portfolio. |
-| Projects  | My projects and some showcases. |
-| Contacts  | Where to reach me out.          |
-| Devlogs   | Logs of my current projects.    |
+<details>
+<summary><b>Sections</b></summary>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contents</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>About</td>
+      <td>Know more about who am I.</td>
+    </tr>
+    <tr>
+      <td>Portfolio</td>
+      <td>Self-explanatory. My portfolio.</td>
+    </tr>
+    <tr>
+      <td>Projects</td>
+      <td>My projects and some showcases.</td>
+    </tr>
+    <tr>
+      <td>Contacts</td>
+      <td>Where to reach me out.</td>
+    </tr>
+    <tr>
+      <td>Devlogs</td>
+      <td>Logs of my current projects.</td>
+    </tr>
+  </tbody>
+</table>
+
+</details>
 
 > [!TIP]
 > No tip, actually. Just putting this for pure boredom, lmfao
