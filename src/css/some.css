@@ -1,6 +1,7 @@
 h1 {
     font-family: 'Bai Jamjuree', serif;
     text-align: center;
+    font-size: 5em;
     /*background-color: #00ffff;*/
 }
 
@@ -9,12 +10,4 @@ p {
     width: 500px;
     align-content: center;
     /*text-align: center;*/
-}
-
-.section-header {
-    /*display: inline;*/
-    font-family: 'Bai Jamjuree', serif;
-    background-color: #ada589;
-    align-content: center;
-    text-align: center;
 }

@@ -2,17 +2,22 @@
 
 header ul {
     display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    overflow: hidden;
-    margin: 10px 0 10px 0;
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
+header li {
+    height: 100%;
+}
+
 header li a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 4px 10px;
+    padding: 0 10px;
+    height: 100%
 }
 
 header li a:hover {
@@ -21,8 +26,10 @@ header li a:hover {
 }
 
 header nav {
-    top: 0;
-    width: 100%;
+    display: flex;
+    justify-content: center; /* Determine navbar 's position*/
+    align-items: center;
+    height: 60px;
 }
 
 header nav a {
@@ -30,4 +37,5 @@ header nav a {
     font-weight: lighter;
     text-decoration: none;
     color: white;
+    display: block;
 }

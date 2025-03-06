@@ -7,6 +7,7 @@ html {
 * {
     user-select: text; /* Able to highlight the text */
     caret-color: transparent; /* Hide blinking caret */
+    font-size: 16px; /* Default font-size: 16px; */
 }
 
 body {
@@ -25,14 +26,12 @@ section {
 }
 
 header {
-    height: 60px; /*auto;*/
-    width: 100%;
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
     z-index: 1000;
-    padding: 0 0 0 00px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    background-color: #000000;
 }
 
 main {

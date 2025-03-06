@@ -20,11 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = url.instagram;
     }
     
-    document.getElementById('reload').addEventListener('click', reload);
-    document.getElementById('itch').addEventListener('click', func);
-    document.getElementById('instagram').addEventListener('click', ig);
+    // document.getElementById('itch').addEventListener('click', func);
+    // document.getElementById('instagram').addEventListener('click', ig);
 });
 
 document.addEventListener('click', (event) => {
     console.log("hello", event.x, event.y);
+});
+
+document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector("nav ul").classList.toggle("show");
 });
