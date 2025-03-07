@@ -1,41 +1,100 @@
 /* Header div (navbar) styling */
 
-header ul {
+header nav {
+    display: flex;
+    justify-content: space-between; /* Left, center, and right element */
+    align-items: center;
+    height: 60px; /* Navbar's height */
+    padding: 0 20px; /* Screen side's distance */
+    background-color: black;
+}
+
+.nav-left {
+    font-size: 18px;
+    color: white;
+    display: none;
+}
+
+.nav-left a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    user-select: none;
+}
+
+.nav-center ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header li {
+.nav-center li {
     height: 100%;
 }
 
-header li a {
+.nav-center a {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center */
     justify-content: center;
     text-align: center;
     padding: 0 10px;
-    height: 100%
-}
-
-header li a:hover {
-    background-color: white;
-    color: black;
-}
-
-header nav {
-    display: flex;
-    justify-content: center; /* Determine navbar 's position*/
-    align-items: center;
-    height: 60px;
-}
-
-header nav a {
+    height: 100%;
     font-family: 'SFMono', serif;
     font-weight: lighter;
     text-decoration: none;
+    color: #797979;
+}
+
+.nav-center a:hover {
+    background: none;
     color: white;
-    display: block;
+}
+
+.nav-right {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Mobile mode (screen width < 768px) */
+@media screen and (max-width: 768px) {
+    .nav-center ul {
+        display: block; /* Keep showed but is hide */
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column; /* Become dropdown */
+        position: absolute;
+        top: 60px; /* So it shows below navbar */
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding: 0;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .nav-center ul.show {
+        max-height: 300px; /* Display if hamburger is clicked */
+    }
+
+    .nav-center li {
+        text-align: center;
+        padding: 5px 0; /* Set section's spacing when dropdown */
+    }
+
+    .nav-center a:hover {
+        background: white;
+        color: black;
+        border-radius: 3px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-left {
+        cursor: pointer;
+        display: block;
+    }
 }

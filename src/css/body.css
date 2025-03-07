@@ -15,10 +15,10 @@ body {
     grid-template-rows: auto 10fr auto auto;
     grid-template-columns: 1fr;
     min-height: 100vh;
-    background-color: #F8F7F3;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*background-color: #F8F7F3;*/
 }
 
 section {
@@ -30,16 +30,17 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000;
     z-index: 1000;
+    /*background-color: #000;*/
 }
 
 main {
     margin-top: 60px;
     /*padding-top: 60px;*/
-    background-color: green;
+    /*background-color: green;*/
 }
 
 footer {
-    background-color: indianred;
+    color: white;
+    background-color: #000000;
 }

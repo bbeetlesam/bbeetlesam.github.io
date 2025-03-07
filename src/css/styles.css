@@ -5,27 +5,3 @@
 @import url('some.css');
 @import url('header.css');
 @import url('sections.css');
-
-/* All At rules */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Sembunyikan navbar saat layar kecil */
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #000;
-    }
-
-    nav ul.show {
-        display: flex; /* Tampilkan menu saat tombol hamburger diklik */
-    }
-
-    .menu-toggle {
-        display: block;
-        cursor: pointer;
-        color: white;
-        font-size: 24px;
-    }
-}

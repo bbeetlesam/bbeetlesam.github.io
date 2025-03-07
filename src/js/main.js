@@ -7,27 +7,39 @@ const url = {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    function reload() {
-        window.location.reload();
-    }
-    
-    function func() {
-        window.location.href = url.itch;
-        document.getElementById(`itch`).innerHTML = 'Itch.io!'
-    }
-    
-    function ig() {
-        window.location.href = url.instagram;
-    }
+    // function reload() {
+    //     window.location.reload();
+    // }
+    //
+    // function ig() {
+    //     window.location.href = url.instagram;
+    // }
     
     // document.getElementById('itch').addEventListener('click', func);
     // document.getElementById('instagram').addEventListener('click', ig);
 });
 
-document.addEventListener('click', (event) => {
-    console.log("hello", event.x, event.y);
+// Navbar dropdown
+const menu = document.querySelector(".nav-center ul");
+const hamburger = document.querySelector(".nav-left");
+
+// idk how to explain this (this should be on top)
+document.querySelector(".nav-left").addEventListener("click", function () {
+    document.querySelector(".nav-center ul").classList.toggle("show");
 });
 
-document.querySelector(".menu-toggle").addEventListener("click", function () {
-    document.querySelector("nav ul").classList.toggle("show");
+// Dropdown when hamburger is clicked
+hamburger.addEventListener("click", function () {
+    if (menu.style.maxHeight && menu.style.maxHeight !== "0px") {
+        menu.style.maxHeight = "0px";
+    } else {
+        menu.style.maxHeight = menu.scrollHeight + "px";
+    }
+});
+
+// Dropdown closed when a section is clicked
+document.querySelectorAll(".nav-center a").forEach(item => {
+    item.addEventListener("click", () => {
+        menu.style.maxHeight = "0px"; // Close dropdown
+    });
 });

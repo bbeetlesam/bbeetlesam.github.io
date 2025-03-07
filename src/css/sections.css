@@ -1,15 +1,17 @@
 /* Main div sections */
 
 .section-header {
-    /*display: inline;*/
+    display: block;
     font-family: 'Bai Jamjuree', serif;
-    font-size: 2rem;
+    font-size: 3rem;
     background-color: #ada589;
     align-content: center;
     text-align: center;
+    /*border: #F8F7F3 1px solid;*/
 }
 
 #hero {
+    padding-top: 0;
     height: calc(100vh - 60px - 20px);
     background-color: lightblue;
 }
