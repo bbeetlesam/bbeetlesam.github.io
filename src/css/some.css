@@ -8,7 +8,8 @@ h1 {
 p {
     font-family: 'SFMono', serif;
     font-size: 1.5em;
-    width: 500px;
     align-content: center;
     /*text-align: center;*/
+    width: 50%;
+    /*max-width: 100vw;*/
 }

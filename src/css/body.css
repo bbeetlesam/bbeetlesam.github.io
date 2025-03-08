@@ -1,18 +1,20 @@
 /* Body styling */
 
-html {
-    scroll-behavior: smooth; /* Enable smooth scroll when ported to an element */
-}
-
 * {
     user-select: text; /* Able to highlight the text */
     caret-color: transparent; /* Hide blinking caret */
     font-size: 16px; /* Default font-size: 16px; */
+
+    outline: 1px solid red; /* Debugging outline */
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scroll when ported to an element */
 }
 
 body {
     display: grid;
-    grid-template-rows: auto 10fr auto auto;
+    grid-template-rows: auto 10fr auto;
     grid-template-columns: 1fr;
     min-height: 100vh;
     margin: 0;
@@ -26,7 +28,7 @@ section {
 }
 
 header {
-    position: fixed;
+    position: fixed ;
     top: 0;
     left: 0;
     width: 100%;
@@ -35,9 +37,10 @@ header {
 }
 
 main {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
     /*padding-top: 60px;*/
     /*background-color: green;*/
+    overflow-x: hidden;
 }
 
 footer {

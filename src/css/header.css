@@ -38,12 +38,17 @@ header nav {
     align-items: center; /* Vertically center */
     justify-content: center;
     text-align: center;
-    padding: 0 10px;
-    height: 100%;
+    padding: 0 10px; /* Distance between each menu */
+    height: 100% /* Navbar menu's padding height */;
     font-family: 'SFMono', serif;
     font-weight: lighter;
     text-decoration: none;
     color: #797979;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
 }
 
 .nav-center a:hover {
@@ -54,11 +59,6 @@ header nav {
 .nav-right {
     color: white;
     cursor: pointer;
-}
-
-.nav-right a {
-    color: white;
-    text-decoration: none;
 }
 
 /* Mobile mode (screen width < 768px) */

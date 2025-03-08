@@ -19,27 +19,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // document.getElementById('instagram').addEventListener('click', ig);
 });
 
-// Navbar dropdown
+// Select the navbar menu and the hamburger button
 const menu = document.querySelector(".nav-center ul");
 const hamburger = document.querySelector(".nav-left");
 
-// idk how to explain this (this should be on top)
-document.querySelector(".nav-left").addEventListener("click", function () {
-    document.querySelector(".nav-center ul").classList.toggle("show");
-});
-
-// Dropdown when hamburger is clicked
+// Toggle dropdown when the hamburger button is clicked
 hamburger.addEventListener("click", function () {
-    if (menu.style.maxHeight && menu.style.maxHeight !== "0px") {
-        menu.style.maxHeight = "0px";
+    menu.classList.toggle("show"); // Toggle the "show" class to control visibility
+    
+    if (menu.classList.contains("show")) {
+        menu.style.maxHeight = menu.scrollHeight + "px"; // Expand the dropdown smoothly
     } else {
-        menu.style.maxHeight = menu.scrollHeight + "px";
+        menu.style.maxHeight = "0px"; // Collapse the dropdown
     }
 });
 
-// Dropdown closed when a section is clicked
+// Close the dropdown when a menu item is clicked
 document.querySelectorAll(".nav-center a").forEach(item => {
     item.addEventListener("click", () => {
-        menu.style.maxHeight = "0px"; // Close dropdown
+        if (menu.classList.contains("show")) {
+            menu.classList.remove("show"); // Remove "show" class for consistency
+            menu.style.maxHeight = "0px"; // Ensure the dropdown is closed
+        }
     });
+});
+
+// Ensure proper navbar behavior when resizing the window
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) { // When switching back to desktop mode
+        menu.classList.remove("show"); // Remove the dropdown class
+        menu.style.maxHeight = ""; // Reset maxHeight to prevent layout issues
+    }
 });
