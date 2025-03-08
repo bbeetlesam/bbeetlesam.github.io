@@ -1,4 +1,4 @@
-/* Main entrance for HTML that imports all CSS files */
+/* CSS entry point */
 
 @import url('font.css');
 @import url('body.css');
