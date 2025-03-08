@@ -1,3 +1,9 @@
 # Editor folder
 /.idea
 /.vscode
+
+# Decap CMS (experimental)
+/admin
+/node_modules
+package-lock.json
+package.json
