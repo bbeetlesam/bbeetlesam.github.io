@@ -5,7 +5,7 @@
     caret-color: transparent; /* Hide blinking caret */
     font-size: 16px; /* Default font-size: 16px; */
 
-    outline: 1px solid red; /* Debugging outline */
+    /*outline: 1px solid red; !* Debugging outline *!*/
 }
 
 html {
