@@ -1,10 +1,51 @@
 /* Main div sections */
 
+.section-header {
+    display: block;
+    font-family: 'Bai Jamjuree', serif;
+    font-size: 3rem;
+    background-color: #ada589;
+    align-content: center;
+    text-align: center;
+    /*border: #F8F7F3 1px solid;*/
+}
+
 #hero {
+    padding-top: 0;
     height: calc(100vh - 60px - 20px);
     background-color: lightblue;
 }
 
 #about {
 
+}
+
+#devlogs {
+
+}
+
+.main-p {
+    font-size: 1.5em;
+    max-width: 80%;
+    margin: 0 auto 16px auto;
+    padding: 0 20px;
+}
+
+.main-ul {
+    font-family: 'SFMono', serif;
+    max-width: 80%;
+    margin: 0 auto 24px auto;
+    padding: 0 20px;
+    list-style-position: inside;
+}
+
+.main-ul li {
+    font-size: 1.3em;
+    margin-bottom: 16px;
+    text-indent: -1.3em;
+    padding-left: 1.2em;
+}
+
+.main-ul li strong {
+    font-size: 1.15em;
 }

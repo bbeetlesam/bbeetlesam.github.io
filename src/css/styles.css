@@ -1,12 +1,7 @@
-/* Main entrance for HTML that imports all CSS files */
+/* CSS entry point */
 
 @import url('font.css');
 @import url('body.css');
-@import url('some.css');
+@import url('tags.css');
 @import url('header.css');
 @import url('sections.css');
-
-/* Global CSS variables*/
-:root {
-    --base-font-family: 'Times New Roman';
-}
