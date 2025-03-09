@@ -1,0 +1,55 @@
+/* Footer styling and layouts */
+
+/* Top Footer (Social Media) */
+.footer-top {
+    /*background: #6c6c6c;*/
+    padding: 10px 0; /* Block height */
+    max-height: 60px;
+    border-top: #000000 6px dashed;
+    border-bottom: #000000 6px dashed;
+}
+
+.footer-top a {
+    margin: 0 1vw; /* Icon's distance */
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-top a i:hover {
+    transform: scale(1.33);
+}
+
+.footer-top a i {
+    font-size: 30px;
+    transition: transform 0.15s ease; /* Smooth transition for font size */
+}
+
+/* Bottom Footer (Info) */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-quotes p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-quotes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 00px; /* Set the gap between each text */
+    margin-bottom: 00px; /* Distance between quotes and credits */
+}
+
+.footer-credits {
+    font-family: 'Bai Jamjuree', serif;
+    font-size: 14px;
+    padding-bottom: 00px;
+}

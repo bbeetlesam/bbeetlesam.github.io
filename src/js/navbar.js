@@ -3,7 +3,7 @@
 export function setupNavbar() {
     // Select the navbar menu and the hamburger button
     const menu = document.querySelector(".nav-center ul");
-    const hamburger = document.querySelector(".nav-left");
+    const hamburger = document.querySelector(".nav-right");
 
     // Toggle dropdown when the hamburger button is clicked
     hamburger.addEventListener("click", function () {

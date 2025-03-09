@@ -9,13 +9,13 @@ header nav {
     background-color: black;
 }
 
-.nav-left {
+.nav-right {
     font-size: 18px;
     color: white;
     display: none;
 }
 
-.nav-left a {
+.nav-right a {
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -46,7 +46,7 @@ header nav {
     color: #797979;
 }
 
-.nav-right a {
+.nav-left a {
     color: white;
     text-decoration: none;
 }
@@ -56,7 +56,7 @@ header nav {
     color: white;
 }
 
-.nav-right {
+.nav-left {
     color: white;
     cursor: pointer;
 }
@@ -93,7 +93,7 @@ header nav {
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
 
-    .nav-left {
+    .nav-right {
         cursor: pointer;
         display: block;
     }
