@@ -37,9 +37,6 @@ header {
 }
 
 main {
-    /*margin-top: 60px;*/
-    /*padding-top: 60px;*/
-    /*background-color: green;*/
     overflow-x: hidden;
 
     /* Draw background grids with SVG */
@@ -47,10 +44,9 @@ main {
 }
 
 footer {
-    background: #151515;
     font-family: 'SFMono', serif;
-    color: #fff;
+    color: #000000;
     text-align: center;
     width: 100%;
-    padding: 10px 0 10px; /* Bottom footer padding height */
+    padding: 0 0 00px; /* Bottom footer padding height */
 }

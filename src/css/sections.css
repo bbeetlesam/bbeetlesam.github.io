@@ -4,6 +4,7 @@
     display: block;
     font-family: 'SFMono', serif;
     font-size: 3rem;
+    font-weight: 200;
     /*background-color: #ada589;*/
     align-content: center;
     text-align: center;
@@ -13,7 +14,7 @@
 
 #hero {
     padding-top: 0;
-    height: calc(100vh - 60px - 20px);
+    height: calc(100vh - 60px);
     background-color: lightblue;
 }
 
@@ -33,8 +34,9 @@
     padding: 0 20px;
 }
 
-.main-p:last-child {
+#devlogs .main-p:last-child {
     margin-bottom: 45px; /* Set distance from footer */
+    text-align: center;
 }
 
 .main-p a {
