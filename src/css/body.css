@@ -9,7 +9,7 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Enable smooth scroll when ported to an element */
+    scroll-behavior: smooth; /* Enable smooth scroll when transported to an element */
 }
 
 body {
@@ -20,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*background-color: #F8F7F3;*/
+    background-color: #F8F7F3;
 }
 
 section {
@@ -41,6 +41,9 @@ main {
     /*padding-top: 60px;*/
     /*background-color: green;*/
     overflow-x: hidden;
+
+    /* Draw background grids with SVG */
+    background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><path d='M0 0H50V50H0z' fill='none' stroke='%23d6d6d6' stroke-width='2' stroke-linecap='square'/></svg>") repeat fixed;
 }
 
 footer {

@@ -2,7 +2,13 @@
 
 @import url('font.css');
 @import url('body.css');
-@import url('tags.css');
 @import url('header.css');
 @import url('sections.css');
 @import url('footer.css');
+
+h1 {
+    font-family: 'Bai Jamjuree', serif;
+    text-align: center;
+    font-size: 5em;
+    background-color: #b0b0b0;
+}
