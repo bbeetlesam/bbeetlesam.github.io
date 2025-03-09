@@ -28,7 +28,7 @@ section {
 }
 
 header {
-    position: fixed ;
+    position: fixed; /* Cant choose whether fixed or sticky */
     top: 0;
     left: 0;
     width: 100%;
@@ -44,6 +44,10 @@ main {
 }
 
 footer {
-    color: white;
-    background-color: #000000;
+    background: #151515;
+    font-family: 'SFMono', serif;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0 10px; /* Bottom footer padding height */
 }
