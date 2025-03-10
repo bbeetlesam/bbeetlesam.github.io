@@ -13,7 +13,27 @@ details {
     cursor: pointer;
 }
 
+@keyframes float {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
 h1 {
     font-family: 'Bai Jamjuree', serif;
-    font-size: 5em;
+    font-size: clamp(3.5em, 6vw, 7vw);
+    animation: float 2.5s ease-in-out infinite;
+}
+
+/* AKJABSKJBAJDB */
+#hero > p {
+    font-family: 'SFMono', serif;
+    font-size: 1em;
+    margin: 0;
 }
