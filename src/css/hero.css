@@ -1,0 +1,19 @@
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(107, 184, 215, 0.6), rgba(107, 184, 215, 0));
+}
+
+details {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Bai Jamjuree', serif;
+    font-size: 5em;
+}
