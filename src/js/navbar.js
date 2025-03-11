@@ -30,8 +30,10 @@ export function setupNavbar() {
     
     // Close dropdown if clicking outside the navbar
     document.addEventListener("click", function (event) {
-        if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
-            closeDropdown();
+        if (window.innerWidth <= 768) { // Only apply on mobile (TS IS IMPORTANT OR YOU'LL GET AN ASYMMETRICAL BUG)
+            if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+                closeDropdown();
+            }
         }
     });
     
@@ -39,13 +41,18 @@ export function setupNavbar() {
     window.addEventListener("resize", () => {
         if (window.innerWidth > 768) {
             closeDropdown();
+            menu.style.removeProperty("max-height"); // Remove the dropdown height limit
+            menu.classList.remove("show"); // Ensure the "show" class is removed
+            menu.style.display = ""; // Reset display to follow the original CSS
         }
     });
     
     // Close dropdown when a menu item is clicked
     menuItems.forEach(item => {
         item.addEventListener("click", () => {
-            closeDropdown();
+            if (window.innerWidth <= 768) { // Only closes on mobile (TS IS IMPORTANT OR YOU'LL GET AN ASYMMETRICAL BUG)
+                closeDropdown();
+            }
         });
     });
 }
