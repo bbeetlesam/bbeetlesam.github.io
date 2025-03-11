@@ -1,14 +1,21 @@
 # ![logo][] UM, HI.
 
-Welcome to my personal website, free-hosted with GitHub Pages. Here, guess I'll put list of my projects and
+WELCOME to my personal website, free-hosted with GitHub Pages. Here, guess I'll put list of my projects and
 my own portfolio (for God's sake, I'm really craving for a job), and maybe showcasing some of my
-ongoing/completed projects.<br>
-You can find this website's repository in [here](https://github.com/bbeetlesam/bbeetlesam.github.io/).
+ongoing/completed projects. 
+
+This is my first ever completed web project, so I really enjoy the swe-our and sour of the process
+and very excited about what the result would look like, before someone realizing that nobody is actually
+paying attention to this shit.
+
+I feel like Web Dev is my second favorite after Game Dev, proven by how much I put my mind to this website solely.
+But well, my mind is changing fast sometimes. Maybe I'd go to Machine Learning tomorrow, who knows.
 
 ## Languages and Frameworks
 
 Currently, this website only uses pure HTML, CSS, and JavaScript, so you can't expect too much from the page,
-but I'll consider learning some CSS framework like Tailwind/Bootstrap in the future.
+but I'll consider learning some CSS frameworks like Tailwind/Bootstrap in the future, if the 'future' would even come.
+JS frameworks? No, I don't know which one I should pick, too many people on it.
 
 Currently, too, I'm a toddler to this web-dev stuffs, so **advices** would be very much appreciated!
 
@@ -16,10 +23,12 @@ Currently, too, I'm a toddler to this web-dev stuffs, so **advices** would be ve
 
 ## Contents
 
-Currently, there is no worth-to-look contents/feature in this website. But, I'll add more features as soon as I can!
+Currently, there are no worth-to-look contents/features in this website (heck, even I'm not worth-to-look, or loved),
+besides me nonsensing too much nonsense. But, I'll add more stuffs inside it, like an embedded projects showcase, 
+or my own devlog articles as soon as I want (can). But maybe, it'll take a lifetime. Very worth it tbh.
 
 <details>
-<summary><b>Sections</b></summary>
+<summary><b>Sections [WIP]</b></summary>
 
 <table>
   <thead>
@@ -31,23 +40,27 @@ Currently, there is no worth-to-look contents/feature in this website. But, I'll
   <tbody>
     <tr>
       <td>About</td>
-      <td>Know more about who am I.</td>
+      <td>Know more about who am I (no need to know).</td>
     </tr>
     <tr>
-      <td>Portfolio</td>
-      <td>Self-explanatory. My portfolio.</td>
+      <td>Experience</td>
+      <td>My experience throughout my life (I can cook noodle).</td>
     </tr>
     <tr>
       <td>Projects</td>
-      <td>My projects and some showcases.</td>
-    </tr>
-    <tr>
-      <td>Contacts</td>
-      <td>Where to reach me out.</td>
+      <td>My projects and some showcases of 'em (veery boring).</td>
     </tr>
     <tr>
       <td>Devlogs</td>
-      <td>Logs of my current projects.</td>
+      <td>Logs of my current projects. Very informative.</td>
+    </tr>
+    <tr>
+      <td>Portfolio</td>
+      <td>In case I'm looking for a job (I'm looking for a job).</td>
+    </tr>
+    <tr>
+      <td>Contacts</td>
+      <td>Where to reach me out (I'm a sane person trust me).</td>
     </tr>
   </tbody>
 </table>
@@ -55,17 +68,17 @@ Currently, there is no worth-to-look contents/feature in this website. But, I'll
 </details>
 
 > [!TIP]
-> No tip, actually. Just putting this for pure boredom, lmfao
+> No tip, actually. Just putting this for the sake of aesthetics, ehe
 
 ## More
 
-Find some of my previous/current **projects** on:
+Find some of my previous/current unpolished-unfinished-cheesy **projects** on:
 
 * [GitHub](https://github.com/bbeetlesam/)
 * [itch.io](https://bbeetlesam.itch.io/)
 
-I also have [Instagram](https://www.instagram.com/jstsams/) and [Bluesky](https://bbeetlesam.bsky.social) account.
-Go for a look!<br> 
+I also have [Instagram](https://www.instagram.com/jstsams/) and [Bluesky](https://bbeetlesam.bsky.social) account.\
+Go take a look and see how ret--ded I am!<br> 
 
 **That's it. _See you soon_ with the new updates!**
 
