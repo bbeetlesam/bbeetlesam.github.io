@@ -5,10 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="author" content="bbeetlesam">
         <meta name="description" content="bbeetlesam's portfolio">
-        <title>My Portfolio</title>
+        <title>bbeetlesam | Portfolio</title>
 
         <link rel="icon" type="image/svg+xml" href="assets/img/icon.png">
         <link rel="stylesheet" href="src/css/font.css">
+        <link rel="stylesheet" href="src/css/header.css">
+        <script type="module" src="src/js/main.js" defer></script>
 
         <style>
             :root {
@@ -53,6 +55,25 @@
     </head>
 
     <body>
+        <!-- Header div (Navbar) -->
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="#header"><img src="assets/img/icon.svg" alt="Main icon" style="width:20px;height:20px;"></a>
+                </div>
+                <div class="nav-center">
+                    <ul>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#devlogs">Devlogs</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right"><a >&#9776;</a></div>
+            </nav>
+        </header>
+
         <div class="header-wrapper">
             <h1 id="header">My Portfolio</h1>
         </div>

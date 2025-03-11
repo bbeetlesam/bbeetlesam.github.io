@@ -1,0 +1,39 @@
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(107, 184, 215, 0.6), rgba(107, 184, 215, 0));
+}
+
+details {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
+h1 {
+    font-family: 'Bai Jamjuree', serif;
+    font-size: clamp(3.5em, 6vw, 7vw);
+    animation: float 2.5s ease-in-out infinite;
+}
+
+/* AKJABSKJBAJDB */
+#hero > p {
+    font-family: 'SFMono', serif;
+    font-size: 1em;
+    margin: 0;
+}

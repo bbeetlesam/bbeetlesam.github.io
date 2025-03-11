@@ -1,100 +1,147 @@
-/* Header div (navbar) styling */
-
+/* Navbar container */
 header nav {
     display: flex;
-    justify-content: space-between; /* Left, center, and right element */
+    justify-content: space-between; /* Align left, center, and right elements */
     align-items: center;
-    height: 60px; /* Navbar's height */
-    padding: 0 20px; /* Screen side's distance */
-    background-color: black;
+    height: 60px; /* Set navbar height */
+    padding: 0 20px; /* Space on left and right */
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    backdrop-filter: blur(3px); /* Apply blur effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: background 0.2s ease-in-out; /* Smooth transition */
 }
 
-.nav-right {
-    font-size: 18px;
-    color: white;
-    display: none;
+/* Change background on hover or when menu is open */
+header nav:hover,
+header nav.open {
+    background: rgba(248, 247, 243, 1);
 }
 
-.nav-right a {
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    user-select: none;
-}
-
-.nav-center ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-center li {
-    height: 100%;
-}
-
-.nav-center a {
-    display: flex;
-    align-items: center; /* Vertically center */
-    justify-content: center;
-    text-align: center;
-    padding: 0 10px; /* Distance between each menu */
-    height: 100% /* Navbar menu's padding height */;
-    font-family: 'SFMono', serif;
-    font-weight: lighter;
-    text-decoration: none;
-    color: #797979;
-}
-
+/* Navbar left section */
 .nav-left a {
     color: white;
     text-decoration: none;
 }
 
-.nav-center a:hover {
-    background: none;
-    color: white;
+/* Right-side menu (hidden by default) */
+.nav-right {
+    display: none;
 }
 
+/* Styling for right-side menu items */
+.nav-right a {
+    font-size: 18px;
+    color: #000000;
+    text-decoration: none;
+    user-select: none;
+}
+
+/* Centered menu items */
+.nav-center ul {
+    display: flex;
+    justify-content: center;
+    gap: 00px; /* Adjust spacing between menu items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Each menu item */
+.nav-center li {
+    height: 100%;
+}
+
+/* Menu links */
+.nav-center a {
+    display: flex;
+    align-items: center; /* Align text vertically */
+    justify-content: center;
+    text-align: center;
+    padding: 0 10px; /* Spacing between items */
+    height: 100%; /* Full navbar height */
+    font-family: 'SFMono', serif;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #000000; /* Text color */
+    position: relative;
+}
+
+/* Hover effect for menu items */
+.nav-center a:hover {
+    background: none;
+    color: #25b4ff;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Underline animation that expands from center */
+.nav-center a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #b0e0ff;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* Expand underline on hover */
+.nav-center a:hover::after {
+    width: 80%;
+}
+
+/* Navbar left section styling */
 .nav-left {
     color: white;
     cursor: pointer;
 }
 
-/* Mobile mode (screen width < 768px) */
+/* Mobile mode (screens < 768px) */
 @media screen and (max-width: 768px) {
+    /* Make menu vertical in mobile mode */
     .nav-center ul {
-        display: block; /* Keep showed but is hide */
+        display: block;
         max-height: 0;
         overflow: hidden;
-        flex-direction: column; /* Become dropdown */
+        flex-direction: column;
         position: absolute;
-        top: 60px; /* So it shows below navbar */
+        top: 60px;
         left: 0;
         width: 100%;
-        background-color: black;
+        background-color: #f8f7f3; /* Change from black to white */
         padding: 0;
         transition: max-height 0.3s ease-in-out;
     }
 
-    .nav-center ul.show {
-        max-height: 300px; /* Display if hamburger is clicked */
+    /* Remove underline animation in mobile dropdown */
+    .nav-center a::after {
+        content: none;
     }
 
-    .nav-center li {
+    /* Mobile menu items styling */
+    .nav-center a {
+        color: black; /* Black text */
+        padding: 10px;
+        display: block;
         text-align: center;
-        padding: 5px 0; /* Set section's spacing when dropdown */
     }
 
+    /* Hover effect for mobile menu */
     .nav-center a:hover {
-        background: white;
-        color: black;
-        border-radius: 3px;
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        background-color: #dedede;
+        color: #000;
     }
 
+    /* Show hamburger menu */
     .nav-right {
         cursor: pointer;
         display: block;
+    }
+
+    /* Change hamburger icon to "X" when active */
+    .nav-right a.active {
+        font-size: 24px;
+        content: "✖";
     }
 }

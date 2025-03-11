@@ -36,6 +36,8 @@
 }
 
 .footer-quotes p {
+    font-family: 'SFMono', serif;
+    font-size: clamp(13px, 2vw, 16px);
     margin: 0;
     padding: 0;
 }

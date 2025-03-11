@@ -1,5 +1,7 @@
 /* Main div sections */
 
+@import url('hero.css');
+
 .section-header {
     display: block;
     font-family: 'SFMono', serif;
@@ -10,12 +12,6 @@
     text-align: center;
     border-top: #000000 6px dashed;
     border-bottom: #000000 6px dashed;
-}
-
-#hero {
-    padding-top: 0;
-    height: calc(100vh - 60px);
-    background-color: lightblue;
 }
 
 #about {
