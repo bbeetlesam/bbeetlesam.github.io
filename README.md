@@ -1,8 +1,8 @@
 # ![logo][] UM, HI.
 
-WELCOME to my personal website, free-hosted with GitHub Pages. Here, guess I'll put list of my projects and
-my own portfolio (for God's sake, I'm really craving for a job), and maybe showcasing some of my
-ongoing/completed projects. 
+WELCOME to my personal website, free-hosted with GitHub Pages. 
+Here, guess I'll put a list of my projects and my own portfolio (for God's sake, I'm really craving a job), 
+and maybe showcasing some of my ongoing/completed projects. 
 
 This is my first ever completed web project, so I really enjoy the swe-our and sour of the process
 and very excited about what the result would look like, before someone realizing that nobody is actually
@@ -14,7 +14,7 @@ But well, my mind is changing fast sometimes. Maybe I'd go to Machine Learning t
 ## Languages and Frameworks
 
 Currently, this website only uses pure HTML, CSS, and JavaScript, so you can't expect too much from the page,
-but I'll consider learning some CSS frameworks like Tailwind/Bootstrap in the future, if the 'future' would even come.
+but I'll consider learning some CSS frameworks like Tailwind/Bootstrap in the future, if the 'future' even comes.
 JS frameworks? No, I don't know which one I should pick, too many people on it.
 
 Currently, too, I'm a toddler to this web-dev stuffs, so **advices** would be very much appreciated!
@@ -23,8 +23,8 @@ Currently, too, I'm a toddler to this web-dev stuffs, so **advices** would be ve
 
 ## Contents
 
-Currently, there are no worth-to-look contents/features in this website (heck, even I'm not worth-to-look, or loved),
-besides me nonsensing too much nonsense. But, I'll add more stuffs inside it, like an embedded projects showcase, 
+Currently, there are no worth-to-look contents/features on this website (I am a worthless soul),
+besides me non-sensing too much nonsense. But I'll add more stuff inside it, like an embedded projects showcase, 
 or my own devlog articles as soon as I want (can). But maybe, it'll take a lifetime. Very worth it tbh.
 
 <details>
@@ -48,7 +48,7 @@ or my own devlog articles as soon as I want (can). But maybe, it'll take a lifet
     </tr>
     <tr>
       <td>Projects</td>
-      <td>My projects and some showcases of 'em (veery boring).</td>
+      <td>My projects and some showcases of 'em (very boring).</td>
     </tr>
     <tr>
       <td>Devlogs</td>
@@ -60,7 +60,7 @@ or my own devlog articles as soon as I want (can). But maybe, it'll take a lifet
     </tr>
     <tr>
       <td>Contacts</td>
-      <td>Where to reach me out (I'm a sane person trust me).</td>
+      <td>Where to reach me out (I'm a sane person, trust me).</td>
     </tr>
   </tbody>
 </table>
@@ -72,7 +72,7 @@ or my own devlog articles as soon as I want (can). But maybe, it'll take a lifet
 
 ## More
 
-Find some of my previous/current unpolished-unfinished-cheesy **projects** on:
+Find some of my previous/current **unpolished-unfinished-cheesy** **projects** on:
 
 * [GitHub](https://github.com/bbeetlesam/)
 * [itch.io](https://bbeetlesam.itch.io/)
@@ -82,7 +82,7 @@ Go take a look and see how ret--ded I am!<br>
 
 **That's it. _See you soon_ with the new updates!**
 
-> P.S. If you feel generous and want to give more than an appreciate, you can buy me a tea (not quite a coffee fan)
+> P.S. If you feel generous and want to give more than an appreciating, you can buy me a tea (not quite a coffee fan)
 through [Ko-Fi](https://ko-fi.com/bbeetlesam)!
 
 [//]: # (repo created in 2025/02/25 00.21)
