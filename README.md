@@ -1,4 +1,6 @@
-# ![logo][] UM, HI.
+# <img src="assets/readme.png" alt="icon" style="width:64px;height:64px"></img> UM, HI.
+
+[//]: # (# ![logo][] UM, HI.)
 
 WELCOME to my personal website, free-hosted with GitHub Pages. 
 Here, guess I'll put a list of my projects and my own portfolio (for God's sake, I'm really craving a job), 
@@ -11,6 +13,8 @@ paying attention to this shit.
 I feel like Web Dev is my second favorite after Game Dev, proven by how much I put my mind to this website solely.
 But well, my mind is changing fast sometimes. Maybe I'd go to Machine Learning tomorrow, who knows.
 
+[logo]: https://raw.githubusercontent.com/bbeetlesam/bbeetlesam.github.io/dev/assets/my-notion-face-transparent1.png?raw=true
+
 ## Languages and Frameworks
 
 Currently, this website only uses pure HTML, CSS, and JavaScript, so you can't expect too much from the page,
@@ -18,8 +22,6 @@ but I'll consider learning some CSS frameworks like Tailwind/Bootstrap in the fu
 JS frameworks? No, I don't know which one I should pick, too many people on it.
 
 Currently, too, I'm a toddler to this web-dev stuffs, so **advices** would be very much appreciated!
-
-[logo]: https://raw.githubusercontent.com/bbeetlesam/bbeetlesam.github.io/dev/assets/my-notion-face-transparent1.png?raw=true
 
 ## Contents
 
