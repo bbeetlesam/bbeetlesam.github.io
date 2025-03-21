@@ -2,11 +2,13 @@
 
 [//]: # (# ![logo][] UM, HI.)
 
+> A personal static website, made by lunatic person.
+
 WELCOME to my personal website, free-hosted with GitHub Pages. 
-Here, guess I'll put a list of my projects and my own portfolio (for God's sake, I'm really craving a job), 
+Here, guess I'll put a list of my projects and my own portfolio ~~(for God's sake, I'm really craving a job)~~, 
 and maybe showcasing some of my ongoing/completed projects. 
 
-This is my first ever completed web project, so I really enjoy the swe-our and sour of the process
+This is my first ever completed web project, so I really enjoy the **sweet and sour** of the process
 and very excited about what the result would look like, before someone realizing that nobody is actually
 paying attention to this shit.
 
@@ -17,17 +19,31 @@ But well, my mind is changing fast sometimes. Maybe I'd go to Machine Learning t
 
 ## Languages and Frameworks
 
-Currently, this website only uses pure HTML, CSS, and JavaScript, so you can't expect too much from the page,
-but I'll consider learning some CSS frameworks like Tailwind/Bootstrap in the future, if the 'future' even comes.
+Currently, this website only uses pure [HTML](https://en.wikipedia.org/wiki/HTML), 
+[CSS](https://en.wikipedia.org/wiki/CSS), and [JavaScript](https://en.wikipedia.org/wiki/JavaScript), 
+so you can't expect too much from the page,
+but I'll consider learning some CSS frameworks like Tailwind/Bootstrap in the future, if the 'future' even comes.<br>
 JS frameworks? No, I don't know which one I should pick, too many people on it.
 
 Currently, too, I'm a toddler to this web-dev stuffs, so **advices** would be very much appreciated!
 
+## Tools
+
+- [**GitHub Pages**](https://pages.github.com/) - Host this static website (HTML-CSS-JS).
+- [**Font Awesome**](https://fontawesome.com/) - Use a bunch of icon sets (mostly on footer).
+- [My lovely white ADVAN Workplus laptop]() with an Ilkom sticker and a bunch of scratches - For everything.
+
 ## Contents
 
-Currently, there are no worth-to-look contents/features on this website (I am a worthless soul),
-besides me non-sensing too much nonsense. But I'll add more stuff inside it, like an embedded projects showcase, 
-or my own devlog articles as soon as I want (can). But maybe, it'll take a lifetime. Very worth it tbh.
+Currently, there are no worth-to-look contents/features on this website (even myself),
+except me non-sensing too much nonsense. But I'll add more stuff inside it, like an embedded projects showcase, 
+or my own devlog articles as soon as I want (can).<br>
+But, it might take a lifetime.
+
+Very worth it for all the sleep I **missed**, the eye bags I **earned**, the insomnia I **embraced**, 
+the aching back I **endured**, and the countless, precious hours of my life I'll **never** get back.
+
+**Very worth it.**
 
 <details>
 <summary><b>Sections [WIP]</b></summary>
@@ -70,7 +86,8 @@ or my own devlog articles as soon as I want (can). But maybe, it'll take a lifet
 </details>
 
 > [!TIP]
-> No tip, actually. Just putting this for the sake of aesthetics, ehe
+> Never put your life fully on coding, it's not worth it.
+> Retire early, enjoy life, and die peacefully
 
 ## More
 
