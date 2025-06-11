@@ -26,14 +26,14 @@ details {
 }
 
 h1 {
-    font-family: 'Bai Jamjuree', serif;
+    font-family: 'Clear Sans', serif;
     font-size: clamp(3.5em, 6vw, 7vw);
     animation: float 2.5s ease-in-out infinite;
 }
 
 /* AKJABSKJBAJDB */
 #hero > p {
-    font-family: 'SFMono', serif;
+    font-family: 'Clear Sans', serif;
     font-size: 1em;
     margin: 0;
 }

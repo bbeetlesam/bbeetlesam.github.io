@@ -23,7 +23,7 @@
 }
 
 .main-p {
-    font-family: 'SFMono', 'DM Mono', serif;
+    font-family: 'Clear Sans', 'SFMono', serif;
     font-size: 1.5em;
     max-width: 80%;
     margin: 0 auto 16px auto;
@@ -43,7 +43,7 @@
 }
 
 .main-ul {
-    font-family: 'SFMono', serif;
+    font-family: 'Clear Sans', 'SFMono', serif;
     max-width: 80%;
     margin: 0 auto 24px auto;
     padding: 0 20px;
