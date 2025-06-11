@@ -10,6 +10,8 @@
 
 html {
     scroll-behavior: smooth; /* Enable smooth scroll when transported to an element */
+    scrollbar-width: thin;
+    scrollbar-color: #000000 transparent;
 }
 
 body {
