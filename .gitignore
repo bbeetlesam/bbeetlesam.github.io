@@ -2,6 +2,9 @@
 .idea/
 .vscode/
 
+# Files
+src/js/gamelist.js
+
 # Misc
 assets/sounds/
 trash/
