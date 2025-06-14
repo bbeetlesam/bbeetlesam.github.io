@@ -10,22 +10,39 @@
         <link rel="icon" type="image/svg+xml" href="assets/img/icon.png">
         <link rel="stylesheet" href="src/css/font.css">
         <link rel="stylesheet" href="src/css/header.css">
+        <link rel="stylesheet" href="src/css/footer.css">
         <style>
             * {
                 user-select: text; /* Able to highlight the text */
                 caret-color: transparent; /* Hide blinking caret */
                 font-size: 16px; /* Default font-size: 16px; */
+                /*outline: 1px solid red; !* Debugging outline *!*/
+            }
+
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                scroll-behavior: smooth; /* Enable smooth scroll when transported to an element */
+                scrollbar-width: thin;
+                scrollbar-color: #000000 transparent;
             }
 
             body {
-                background: #F8F7F3 url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><path d='M0 0H50V50H0z' fill='none' stroke='%23d6d6d6' stroke-width='2' stroke-linecap='square'/></svg>") repeat fixed;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                background-color: #F8F7F3;
             }
 
             main {
                 display: flex;
+                flex: 1; /* Sets footer on the edge of the viewport */
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin: 60px 0 0 0;
+                background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><path d='M0 0H50V50H0z' fill='none' stroke='%23d6d6d6' stroke-width='2' stroke-linecap='square'/></svg>") repeat fixed;
             }
 
             header {
@@ -46,10 +63,18 @@
                 font-family: 'Clear Sans', serif;
                 font-size: 1.3rem;
             }
+
+            footer {
+                color: #000000;
+                text-align: center;
+                width: 100%;
+                padding: 0 0 00px; /* Bottom footer padding height */
+            }
         </style>
 
         <script  src="src/js/navbar.js" defer></script>
         <script  src="src/js/events.js" defer></script>
+        <script src="https://kit.fontawesome.com/9abe96d5d5.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -82,5 +107,26 @@
             <p><a href="index.html">Go to the main page</a></p>
     <!--        <p><a href="index.html">Or play a game.</a></p>-->
         </main>
+
+        <footer>
+            <!-- Top Footer (Social Media) -->
+            <div class="footer-top">
+                <a href="https://wa.me/628989076765"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://github.com/bbeetlesam"><i class="fa-brands fa-github"></i></a>
+                <a href="https://bbeetlesam.itch.io/"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://www.linkedin.com/in/samudra-azriel-pradana-b48491321/?originalSubdomain=id"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://instagram.com/jstsams"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://bbeetlesam.bsky.social"><i class="fa-brands fa-bluesky"></i></a>
+            </div>
+
+            <!-- Bottom Footer (About, Links, Credits) -->
+            <div class="footer-bottom">
+                <div class="footer-quotes">
+                    <p>Retrohead, Beatlemania, and Sleep Deprived</p>
+                    <p>"Misery loves company but losers lose alone" – ...</p>
+                </div>
+                <p class="footer-credits">&copy;bbeetlesam 2025. Made by a ret--ded individual.</p>
+            </div>
+        </footer>
     </body>
 </html>
