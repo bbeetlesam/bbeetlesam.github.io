@@ -35,6 +35,14 @@
                 background-color: #F8F7F3;
             }
 
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+
             main {
                 display: flex;
                 flex: 1; /* Sets footer on the edge of the viewport */
@@ -45,23 +53,29 @@
                 background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'><path d='M0 0H50V50H0z' fill='none' stroke='%23d6d6d6' stroke-width='2' stroke-linecap='square'/></svg>") repeat fixed;
             }
 
-            header {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                z-index: 1000;
+            .container-main {
+                width: 85vw;
             }
 
             h1 {
                 font-family: 'SFMono', serif;
                 font-size: 4rem;
-                color: #000000;
+                color: #00248d;
             }
 
             p {
                 font-family: 'Clear Sans', serif;
                 font-size: 1.3rem;
+            }
+
+            .links a {
+                color: #00248d;
+                text-decoration: underline;
+            }
+
+            /* tells user that 404-game is in progress */
+            .links p:nth-child(2) a:hover {
+                cursor: progress;
             }
 
             footer {
@@ -97,15 +111,19 @@
         </header>
 
         <main>
-            <h1>OOPSY DAISY!</h1>
-            <p>People make a mistake sometimes; the difference is how they face it.<br>
-                Don't you think that you're so ambitious for a juvenile?
-                You can't be everything you want to be before your time.<br>
-                So, slow down, you crazy child, take a seat, and disappear for a while.
-                It's alright, you can afford to lose a day or two.<br>
-            </p>
-            <p><a href="index.html">Go to the main page</a></p>
-    <!--        <p><a href="index.html">Or play a game.</a></p>-->
+            <div class="container-main">
+                <h1>OOPSY DAISY!</h1>
+                <p>People make a mistake sometimes; the difference is how they face it.<br>
+                    Don't you think that you're so ambitious for a juvenile?
+                    You can't be everything you want to be before your time.<br>
+                    So, slow down, you crazy child, take a seat, and disappear for a while.
+                    It's alright, you can afford to lose a day or two.<br>
+                </p>
+                <div class="links">
+                    <p><a href="index.html">Go to the main page</a></p>
+                    <p><a href="" onclick="event.preventDefault();">Or, play a game (Coming Soon)</a></p>
+                </div>
+            </div>
         </main>
 
         <footer>
