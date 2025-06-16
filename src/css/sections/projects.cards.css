@@ -42,12 +42,12 @@
     object-fit: fill;
     border-radius: 5px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.08);
-    margin-right: 16px;
+    margin-right: 6px;
 }
 
 .game-title {
     margin: 0;
-    font-size: 1.9em;
+    font-size: 1.8em;
     font-weight: 700;
     color: #F8F7F3;
 }
