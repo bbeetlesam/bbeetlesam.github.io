@@ -1,6 +1,7 @@
 /* Body styling */
 
 * {
+    -webkit-user-select: text; /* Safari support */
     user-select: text; /* Able to highlight the text */
     caret-color: transparent; /* Hide blinking caret */
     font-size: 16px; /* Default font-size: 16px; */

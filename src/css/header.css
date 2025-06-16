@@ -6,6 +6,7 @@ header nav {
     height: 60px; /* Set navbar height */
     padding: 0 20px; /* Space on left and right */
     background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    -webkit-backdrop-filter: blur(3px); /* Safari support */
     backdrop-filter: blur(3px); /* Apply blur effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow */
     transition: background 0.2s ease-in-out; /* Smooth transition */
@@ -38,6 +39,7 @@ header nav.open {
     font-size: 18px;
     color: #000000;
     text-decoration: none;
+    -webkit-user-select: none; /* Safari support */
     user-select: none;
 }
 
