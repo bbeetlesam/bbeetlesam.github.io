@@ -1,33 +1,21 @@
 // Handling events for the website
 
-// URL links
-export const url = {
-    itch: "https://bbeetlesam.itch.io/",
-    instagram: "https://www.instagram.com/jstsams",
-};
-
 export function setupEvents() {
     document.addEventListener('DOMContentLoaded', () => {
-        function reload() {
-            window.location.reload();
-        }
-
-        function ig() {
-            window.location.href = url.instagram;
-        }
-        
-        document.getElementById('itch').addEventListener('click', reload);
-        document.getElementById('instagram').addEventListener('click', ig);
+        console.log("Server hostname: ", location.hostname); // for debugging
     });
     
     // Remove hash anchor in-page in the URL and smooth scroll to sections
     document.querySelectorAll('.navbar-link').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
+            const targetId = this.getAttribute('data-target');
+            const target = document.getElementById(targetId);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+                history.replaceState(null, '', window.location.pathname); // clear hash in URL
+                console.log("href to:", this.getAttribute('href'));  // for debugging
+            }
         });
     });
     
