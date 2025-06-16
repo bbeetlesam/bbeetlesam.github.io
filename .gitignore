@@ -1,12 +1,10 @@
 # Editor folder
-/.idea
-/.vscode
+.idea/
+.vscode/
 
-# Decap CMS (experimental)
-/admin
-/node_modules
-package-lock.json
-package.json
+# Files
+src/js/gamelist.js
 
 # Misc
-/assets/sounds
+assets/sounds/
+trash/

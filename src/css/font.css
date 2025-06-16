@@ -17,3 +17,21 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'DM Mono';
+    src: url('../../assets/font/DMMono-Medium.woff2') format('woff2'),
+    url('../../assets/font/DMMono-Medium.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    src: url('../../assets/font/ClearSans-Bold.woff2') format('woff2'),
+    url('../../assets/font/ClearSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

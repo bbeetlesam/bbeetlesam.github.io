@@ -23,6 +23,11 @@ header nav.open {
     text-decoration: none;
 }
 
+.navbar-icon {
+    width: 35px;
+    height: 35px;
+}
+
 /* Right-side menu (hidden by default) */
 .nav-right {
     display: none;

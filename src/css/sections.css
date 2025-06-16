@@ -1,11 +1,12 @@
 /* Main div sections */
 
 @import url('hero.css');
+@import url('sections/projects.cards.css');
 
 .section-header {
     display: block;
     font-family: 'SFMono', serif;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 200;
     /*background-color: #ada589;*/
     align-content: center;
@@ -14,16 +15,8 @@
     border-bottom: #000000 6px dashed;
 }
 
-#about {
-
-}
-
-#devlogs {
-
-}
-
 .main-p {
-    font-family: 'SFMono', serif;
+    font-family: 'Clear Sans', 'SFMono', serif;
     font-size: 1.5em;
     max-width: 80%;
     margin: 0 auto 16px auto;
@@ -43,7 +36,7 @@
 }
 
 .main-ul {
-    font-family: 'SFMono', serif;
+    font-family: 'Clear Sans', 'SFMono', serif;
     max-width: 80%;
     margin: 0 auto 24px auto;
     padding: 0 20px;
