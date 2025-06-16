@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Numdle",
+		"engine": "Pygame, Python",
+		"desc": "Wordle, but numbers.",
+		"status": "Completed",
+		"icon": "assets/img/numdle-icon.png",
+		"github": "https://github.com/bbeetlesam/numdle",
+		"itch": "https://bbeetlesam.itch.io/numdle",
+		"githubTitle": "numdle"
+	},
+	{
+		"name": "Inbox",
+		"engine": "LÖVE, Lua",
+		"desc": "A narrative horror in Windows98 desktop simulation.",
+		"status": "WIP",
+		"icon": "assets/img/no-icon.png",
+		"github": "https://github.com/bbeetlesam/inbox-game",
+		"itch": "https://bbeetlesam.itch.io/inbox",
+		"githubTitle": "inbox-game"
+	},
+	{
+		"name": "itera",
+		"engine": "LÖVE, Lua",
+		"desc": "An AI training simulation, but it remembers.",
+		"status": "Forgot This One Exist",
+		"icon": "assets/img/no-icon.png",
+		"github": "",
+		"itch": "",
+		"githubTitle": "itera"
+	},
+	{
+		"name": "Globle",
+		"engine": "C++",
+		"desc": "A terminal game.",
+		"status": "Forgot This One Exist",
+		"icon": "assets/img/no-icon.png",
+		"github": "https://github.com/bbeetlesam/globle",
+		"itch": "",
+		"githubTitle": "globle"
+	},
+	{
+		"name": "Unbreakable&nbsp;Diamond",
+		"engine": "SFML, C++",
+		"desc": "A idk how to explain it",
+		"status": "Forgot This One Exist",
+		"icon": "assets/img/no-icon.png",
+		"github": "https://github.com/bbeetlesam/unbreakable-diamond",
+		"itch": "",
+		"githubTitle": "unbreakable-diamond"
+	}
+]
