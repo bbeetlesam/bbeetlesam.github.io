@@ -1,4 +1,4 @@
-//
+// Handling events for the website
 
 // URL links
 export const url = {
@@ -20,7 +20,7 @@ export function setupEvents() {
         document.getElementById('instagram').addEventListener('click', ig);
     });
     
-    // Prevent scrolling hash ref in the page url
+    // Remove hash anchor in-page in the URL and smooth scroll to sections
     document.querySelectorAll('.navbar-link').forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();
@@ -29,5 +29,12 @@ export function setupEvents() {
                 behavior: 'smooth'
             });
         });
+    });
+    
+    // Remove hash anchor cross-page in the URL
+    window.addEventListener('DOMContentLoaded', () => {
+        if (window.location.hash) {
+            history.replaceState(null, '', window.location.pathname + window.location.search);
+        }
     });
 }
