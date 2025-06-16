@@ -1,5 +1,9 @@
 // Make cards in Projects section
-import games from './gamelist.js'; // this file is hid with .gitignore
+fetch('./src/gamelist.json')
+    .then(response => response.json())
+    .then(games => {
+        createProjectsCards(games);
+    });
 
 function getStatusClass(status) {
     switch (status) {
@@ -36,7 +40,7 @@ function createGameCard(game) {
   `;
 }
 
-export default function createProjectsCards() {
+export default function createProjectsCards(games) {
     const projectsContainer = document.querySelector('.card-projects');
     projectsContainer.innerHTML = games.map(createGameCard).join('');
 }
