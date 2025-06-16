@@ -28,7 +28,7 @@ function createGameCard(game) {
                 Status: <span class="${getStatusClass(game.status)}">${game.status}</span>
             </div>
             <div class="game-links">
-                ${game.github ? `<a href="${game.github}" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>` : ""}
+                ${game.github ? `<a href="${game.github}" title="${game.githubTitle}" target="_blank"><i class="fa-brands fa-github"></i></a>` : ""}
                 ${game.itch ? `<a href="${game.itch}" title="itch.io" target="_blank"><i class="fa-brands fa-itch-io"></i></a>` : ""}
             </div>
         </div>
