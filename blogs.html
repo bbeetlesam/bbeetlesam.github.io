@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>bbeetlesam | Blogs</title>
+        <link rel="stylesheet" href="src/css/header.css"/>
+        <link rel="stylesheet" href="src/css/body.css"/>
+        <link rel="icon" type="image/svg+xml" href="assets/img/icon.png"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <style>
+            h1 {
+                margin-top: 60px; /* adjust for fixed header height */
+                font-family: "Ubuntu", serif;
+                font-size: 2em;
+            }
+            .article-wrapper {
+              margin-top: 70px;
+            }
+            .article-content {
+              margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <a href="index.html#hero" class="navbar-link" data-target="hero"><img src="assets/img/icon.png" alt="Main icon" class="navbar-icon"></a>
+                </div>
+                <div class="nav-center">
+                    <ul>
+                        <li><a href="index.html#about" class="navbar-link" data-target="about">About</a></li>
+                        <li><a href="index.html#experience" class="navbar-link" data-target="experience">Experience</a></li>
+                        <li><a href="index.html#projects" class="navbar-link" data-target="projects">Projects</a></li>
+                        <li><a href="blogs.html">Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right"><a id="hamburger">&#9776;</a></div>
+            </nav>
+        </header>
+
+        <h1 id="blog-title">Blogs</h1>
+        <div id="blog-list"></div>
+        <hr id="blog-separator">
+        <div id="blog-content"></div>
+
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+        <script>
+            const blogListDiv = document.getElementById("blog-list");
+            const blogContentDiv = document.getElementById("blog-content");
+            const blogTitle = document.getElementById("blog-title");
+            const blogSeparator = document.getElementById("blog-separator");
+
+            async function loadBlogList() {
+                try {
+                    const res = await fetch("src/blogs/blogs.json");
+                    if (!res.ok) throw new Error("Failed to fetch blog list");
+
+                    const blogs = await res.json();
+                    renderBlogList(blogs);
+                } catch (err) {
+                    blogListDiv.innerHTML = `<p style="color:red"> [!] Error loading blogs: ${err.message}</p>`;
+                }
+            }
+
+            function renderBlogList(blogs) {
+                blogListDiv.innerHTML = blogs.map(blog => {
+                    const slug = blog.file.replace(/\.md$/, "");
+                    return `
+                <div class="blog-item">
+                    <h3><a href="?post=${slug}" data-slug="${slug}">${blog.title}</a></h3>
+                    <p><small>By ${blog.author} | ${blog.date} | ${blog.category}</small></p>
+                    <hr>
+                </div>
+            `;
+                }).join("");
+
+                attachBlogLinks();
+            }
+
+            function attachBlogLinks() {
+                document.querySelectorAll("#blog-list a").forEach(link => {
+                    link.addEventListener("click", async (e) => {
+                        e.preventDefault();
+                        const slug = e.target.dataset.slug;
+
+                        history.pushState({ post: slug }, "", `?post=${slug}`);
+
+                        await loadBlogContent(slug);
+                    });
+                });
+            }
+
+            async function loadBlogContent(slug) {
+                try {
+                    const res = await fetch(`src/blogs/${slug}.md`);
+                    if (!res.ok) throw new Error("Blog file not found");
+
+                    const text = await res.text();
+
+                    blogListDiv.style.display = "none";
+                    blogTitle.style.display = "none";
+                    blogSeparator.style.display = "none";
+
+                    blogContentDiv.innerHTML = `
+                        <div class="article-wrapper">
+                            <button onclick="showBlogList()">← Back to Blogs</button>
+                            <div class="article-content">${marked.parse(text)}</div>
+                        </div>
+                    `;
+
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                } catch (err) {
+                    blogContentDiv.innerHTML = `<p style="color:red">⚠️ Error loading article: ${err.message}</p>`;
+                }
+            }
+
+            function showBlogList() {
+                blogContentDiv.innerHTML = "";
+                blogListDiv.style.display = "block";
+                blogTitle.style.display = "block";
+                blogSeparator.style.display = "block";
+
+                history.pushState({}, "", "blogs.html");
+            }
+
+            window.onpopstate = function(event) {
+                const params = new URLSearchParams(window.location.search);
+                const post = params.get("post");
+                if (post) {
+                    loadBlogContent(post);
+                } else {
+                    showBlogList();
+                }
+            };
+
+            loadBlogList().then(() => {
+                const params = new URLSearchParams(window.location.search);
+                const post = params.get("post");
+                if (post) {
+                    loadBlogContent(post);
+                }
+            });
+        </script>
+    </body>
+</html>
