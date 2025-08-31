@@ -66,10 +66,10 @@ header nav.open {
     text-align: center;
     padding: 0 10px; /* Spacing between items */
     height: 100%; /* Full navbar height */
-    font-family: 'SFMono', serif;
-    font-weight: lighter;
+    font-family: 'Ubuntu', serif;
+    font-weight: 700;
     text-decoration: none;
-    color: #000000; /* Text color */
+    color: rgb(38, 38, 51); /* Text color */
     position: relative;
 }
 
